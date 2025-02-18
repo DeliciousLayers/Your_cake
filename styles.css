@@ -1,0 +1,250 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #B186A8;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header .logo img {
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    max-width: 95px; /* Adjust logo size */
+}
+
+.site-name {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.site-name h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav ul {
+    display: inline-block;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(69, 25, 88);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('cake-banner.jpg') no-repeat center center/cover;
+    color: #7c5273;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: #B186A8;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: rgb(14, 10, 10);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Menu Section */
+.menu {
+    background-color: #B186A8;
+    padding: 40px 0;
+}
+
+.menu h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cake-item {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5% 30px 1.5%;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cake-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.cake-item h3 {
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.cake-item p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #e4d9cb;
+    padding: 40px 0;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #B186A8;
+    color: rgb(54, 24, 50);
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .cake-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .contact form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero .btn {
+        font-size: 16px;
+    }
+
+    .cake-item h3 {
+        font-size: 20px;
+    }
+
+    .cake-item p {
+        font-size: 14px;
+    }
+}
